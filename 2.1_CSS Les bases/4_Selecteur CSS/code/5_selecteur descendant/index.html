@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Exemple de sélecteur descendant</title>
+<style>
+	 h1 span {
+		color: green;
+	}
+     ul.menu {
+        padding: 0;
+        list-style: none;
+	}
+    ul.menu li{
+        display: inline;
+	}
+	ul.menu li a {
+		margin: 10px;
+		text-decoration: none;
+		color: brown;
+	}
+
+	h2 em {
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	
+</style>
+</head>
+<body>
+	<h1>Je suis un <span>titre</span></h1>
+	<h1>Je suis un titre</h1>
+	<ul class="menu">
+		<li><a href="#"> Accueil</a></li>
+		<li><a href="#">A propos</a></li>		
+		<li><a href="#">Services</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+	<h2>Titre <em>niveau</em> 2</h2>
+
+
+</body>
+</html>

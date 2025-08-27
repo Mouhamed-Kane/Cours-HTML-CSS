@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Proprété CSS border-color </title>
+<style>
+    p { 
+        border-width: 15px;
+        padding: 20px;
+        margin: 20px;
+    }
+    p.one {
+        border-style: solid;
+        border-color: #ff0000;
+    }
+    p.two {
+        border-style: solid;
+        border-color: #ff0000 #00ff00;
+    }
+    p.three {
+        border-style: solid;
+        border-color: #ff0000 #00ff00 #0000ff;
+    }
+    p.four {
+        border-style: solid;
+        border-color: #ff0000 #00ff00 #0000ff #ff00ff;
+    }
+</style>
+</head>
+<body>
+    <p class="one"><strong>syntaxe à une valeur:</strong> la valeur unique définit la couleur des quatre côtés de la bordure.</p>
+    <p class="two"><strong>syntaxe à deux valeurs:</strong> la première valeur définit la couleur de la bordure supérieure et inférieure, tandis que la deuxième valeur définit la couleur de la bordure des côtés droit et gauche.</p>
+    <p class="three"><strong>syntaxe à trois valeurs:</strong> la première valeur définit la couleur de la bordure supérieure, la deuxième valeur définit la couleur de la bordure droite et gauche, et la troisième valeur définit la couleur de la bordure inférieure.</p>
+    <p class="four"><strong>syntaxe à quatre valeurs:</strong> chaque valeur définit la couleur de la bordure individuellement dans l'ordre suivant : haut, droite, bas et gauche..</p>
+</body>
+</html>

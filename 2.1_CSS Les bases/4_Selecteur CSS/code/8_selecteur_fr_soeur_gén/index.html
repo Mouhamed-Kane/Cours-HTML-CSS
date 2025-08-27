@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Exemple selecteur enfant ~</title>
+<style>
+	h1 ~ p {
+		color: blue;
+		font-size: 18px;
+	}
+	ul.task ~ p { 
+		color: #f0f;
+		text-indent: 30px;
+	}
+	
+</style>
+</head>
+<body>
+	<h1>Ceci est un titre</h1>
+	<p>Ceci est un paragraphe.</p>
+	<p>Ceci est un autre paragraphe.</p>
+	<ul class="task">
+		<li>Tâche 1</li>
+		<li>Tâche 2</li>
+		<li>Tâche 3</li>
+	</ul>
+	<p>Ceci est aussi un paragraphe.</p>
+	<p>Ceci est également un paragraphe.</p>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Définir la marge pour tous les côtés à la fois</title>
+<style>
+    h1 {
+        margin: 50px; /* appliquer aux quatre côtés */
+    }
+    p {
+        margin: 25px 75px; /* top & bottom | droit & gauche */
+    }
+    div {
+        margin: 25px 50px 75px; /* top | droit & gauche | bottom */
+    }
+    hr {
+        margin: 25px 50px 75px 100px; /* haut | droite | bas | gauche */
+    }
+    h1, p, div {
+        background: yellow;
+    }
+</style>
+</head>
+<body>
+    <h1>Ceci est un titre</h1>
+    <p>Il s'agit d'un simple paragraphe de texte.</p>
+    <div>Il s'agit d'un élément DIV.</div>
+    <hr>
+    <p><strong>Note:</strong> Jouez avec la valeur de la propriété margin pour voir comment cela fonctionne..</p>
+</body>
+</html>
