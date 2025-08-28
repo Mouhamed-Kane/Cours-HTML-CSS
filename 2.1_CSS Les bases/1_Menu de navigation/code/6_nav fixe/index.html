@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+</style>
+</head>
+<body>
+<ul>
+  <li><a class="active" href="#home">Accueil</a></li>
+  <li><a href="#news">Service</a></li>
+  <li><a href="#about">A propos</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+
+<div style="margin-left:25%; padding:1px 16px; height:1000px;">
+  <h2>Nav latéral fixe pleine hauteur</h2>
+  <h3>Essayez de faire défiler cette zone et voyez comment le sidenav se colle à la page.</h3>
+  <p>Remarquez que cet élément div a une marge gauche de 25 %. Cela s'explique par le fait
+     que la navigation latérale est définie sur une largeur de 25 %. Si vous supprimez
+      la marge, la navigation latérale se superposera à cet élément div.</p>
+  <p>Remarquez également que nous avons défini overflow:auto pour sidenav. 
+    Cela ajoutera une barre de défilement lorsque le sidenav est trop long.</p>
+  <p>Un peu de texte..</p>
+  <p>Un peu de texte..</p>
+  <p>Un peu de texte..</p>
+  <p>Un peu de texte..</p>
+  <p>Un peu de texte..</p>
+  <p>Un peu de texte..</p>
+  <p>Un peu de texte..</p>
+  <p>Un peu de texte..</p>
+</div>
+
+</body>
+</html>
+
+
