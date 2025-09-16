@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<title>Mise en page CSS</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Styliser l'en-tête */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/*Style de la barre de navigation supérieure */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style des liens de la barre de navigation supérieure */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Changez la couleur au survol */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Créez trois colonnes inégales qui flottent l'une à côté de l'autre. */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Colonnes de gauche et de droite */
+.column.side {
+  width: 25%;
+}
+
+/* Colonne du milieu */
+.column.middle {
+  width: 50%;
+}
+
+/* Effacer les flotteurs après les colonnes */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Mise en page réactive - les trois colonnes 
+s'empilent l'une sur l'autre au lieu d'être côte à côte. */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Header</h1>
+  <p>Redimensionnez la fenêtre du navigateur pour voir 
+    l'effet responsive.</p>
+</div>
+
+<div class="topnav">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2>Side 1</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+  </div>
+  
+  <div class="column middle">
+    <h2>Main Content</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+  
+  <div class="column side">
+    <h2>Side 2</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+  </div>
+</div>
+  
+</body>
+</html>
+
+

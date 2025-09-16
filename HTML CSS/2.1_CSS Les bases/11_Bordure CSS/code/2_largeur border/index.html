@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Propriété CSS border-width</title>
+<style>
+    p { 
+        border-style: solid;
+        padding: 20px;
+        margin: 20px;
+    }
+    p.one {
+        border-width: 5px;
+    }
+    p.two {
+        border-width: 5px 19px;
+    }
+    p.three {
+        border-width: 5px 10px 15px;
+    }
+    p.four {
+        border-width: medium 10px thick 15px;
+    }
+</style>
+</head>
+<body>
+    <p class="one"><strong>syntaxe à une valeur:</strong> la valeur unique
+         définit la largeur des quatre côtés de la bordure.</p>
+
+    <p class="two"><strong>syntaxe à deux valeurs:</strong> la première valeur
+         définit la largeur de la bordure supérieure et inférieure, 
+         tandis que la deuxième valeur définit la largeur 
+         de la bordure des côtés droit et gauche.</p>
+
+    <p class="three"><strong>syntaxe à trois valeurs:</strong> la première 
+        valeur définit la largeur de la bordure supérieure, la deuxième 
+        valeur définit la largeur de la bordure droite et gauche, 
+        et la troisième valeur définit la largeur de la bordure inférieure.</p>
+        
+    <p class="four"><strong>syntaxe à quatre valeurs :</strong> chaque valeur 
+        définit la largeur de la bordure individuellement dans 
+        l'ordre suivant : haut, droite, bas et gauche.</p>
+</body>
+</html>

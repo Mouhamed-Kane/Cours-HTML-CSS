@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Définir le padding pour tous les côtés à la fois</title>
+<style>
+    h1 {
+        padding: 20px; /* s'appliquent aux quatre côtés */
+    }
+    p {
+        padding: 25px 75px; /* top et bottom | right et left */
+    }
+    div {
+        padding: 25px 50px 75px; /* top | right et left  | bottom */
+    }
+    pre {
+        padding: 25px 50px 75px 100px; /* top | right | bottom | left */
+    }
+    h1, p, div, pre {
+        border: 2px solid red;
+    }
+</style>
+</head>
+<body>
+    <h1>Ceci est un titre </h1>
+    <p>Ceci est un simple paragraphe de texte.</p>
+    <div>Ceci est un élément DIV.</div>
+    <pre>Il s'agit d'un morceau de texte préformaté...</pre>
+    <p><strong>Note:</strong> Jouez avec la valeur de la 
+        propriété padding pour voir comment cela fonctionne.</p>
+</body>
+</html>                            

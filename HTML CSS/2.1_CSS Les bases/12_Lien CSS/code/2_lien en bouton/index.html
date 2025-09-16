@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Personnaliser un lien en tant que bouton à l'aide de CSS</title>
+<style>          
+    a:link, a:visited  {
+        color: white;
+        background-color: #1ebba3;
+        display: inline-block;
+        /* top et bottom  = 10px | left et right = 20px */
+        padding: 10px 20px;
+        border: 2px solid;
+        text-decoration: none;
+        text-align: center;
+        font: 14px Arial, sans-serif;
+        border-radius: 10px;
+    }
+    a:hover, a:active {
+        background-color: #9c6ae1;
+    }
+</style>
+</head>
+<body>
+    <p>
+        <a href="#">Accueil</a>
+        <a href="#">A Propos</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </p>
+</body>
+</html>                            

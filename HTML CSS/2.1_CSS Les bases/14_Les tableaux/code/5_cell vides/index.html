@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Example of CSS empty-cells property</title>
+<style>
+    table {
+        width: 300px;
+        border-collapse: separate;
+    }
+    table, th, td{
+        border: 1px solid #000000;
+    }
+    table.empty-show {
+        empty-cells: show;                        
+    }
+    table.empty-hide {
+        empty-cells: hide;           
+    }    
+</style>
+</head>
+<body>
+    <h2>Tableau avec des cellules vides</h2>
+    <table class="empty-show">
+        <tr>
+            <th>Nom</th>
+            <td>John Carter</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td></td>
+        </tr>
+    </table>
+    <hr>
+    <br>
+    <h2>Tableau avec des cellules vides masquées</h2>
+    <table class="empty-hide">
+        <tr>
+            <th>Nom</th>
+            <td>Peter Parker</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td></td>
+        </tr>
+    </table>
+    <p><strong>Note:</strong> Vous pouvez voir que la cellule vide dans le deuxième exemple de tableau est complètement cachée. Espace insécable  est considéré comme un contenu.</p>
+</body>
+</html>
