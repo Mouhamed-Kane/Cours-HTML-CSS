@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Ecrire un script qui demande une année à l'utilisateur, qui vérifie 
+    et affiche si l'année est bissextile ou non -->
+
+    <script>
+        //demande une année à l'utilisateur 
+        let annee = parseInt(prompt("Donner une année"));
+
+        //vérifie 
+        //et affiche si l'année est bissextile ou non
+
+        if ((annee % 4 == 0) && (annee % 100 != 0) || (annee % 400 == 0)){
+            alert(annee + " est bissextile");
+        } else {
+            alert(annee + " non bissextile");
+        }
+    </script>
+</body>
+</html>

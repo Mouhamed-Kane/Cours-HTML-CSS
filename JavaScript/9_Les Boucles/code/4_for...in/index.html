@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Iterate JavaScript sur un tableau en utilisant la boucle For</title>
+  </head>
+  <body>
+    <script>
+      // Un objet avec quelques propriétés
+      let person = { 
+        prenom: "John", 
+        nom: "Doe", 
+        age: 36, 
+        adresse: "HLM Grand Yoff", 
+        ville : "Dakar"
+    };
+
+      // Boucle sur toutes les propriétés de l'objet
+      for (let i in person) {
+        document.write("<p>" + i + " = " + person[i] + "</p>");
+      }
+    </script>
+  </body>
+</html>

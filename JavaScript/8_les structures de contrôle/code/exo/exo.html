@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Ecrire un programme qui demande un nombre entier à l'utilisateur
+    puis qui test et affiche s'il est divisible par 3 et 13 -->
+
+    <script>
+        //demande un nombre entier à l'utilisateur
+        let nombre = parseInt(prompt("Donner un nombre entier"));
+
+        //test
+        if(nombre % 3 == 0 && nombre % 13 ==0) {
+            //affiche
+            alert(nombre + " est divible par 3 et 13");
+        } else {
+            alert(nombre + " n'est pas divible par 3 et 13");
+        }
+        
+    </script>
+
+</body>
+</html>
