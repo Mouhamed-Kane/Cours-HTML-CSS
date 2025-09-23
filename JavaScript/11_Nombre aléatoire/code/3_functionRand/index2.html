@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Math.random()</h2>
+
+<p>A chaque fois que vous cliquez sur le bouton, 
+  getRndInteger(min, max) renvoie un nombre aléatoire 
+  entre 1 et 10 (les deux inclus):</p>
+
+<button onclick="document.getElementById('demo').innerHTML = 
+getRndInteger(1,10)">Cliquez-moi</button>
+
+<p id="demo"></p>
+
+<script>
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+</script>
+
+</body>
+</html>

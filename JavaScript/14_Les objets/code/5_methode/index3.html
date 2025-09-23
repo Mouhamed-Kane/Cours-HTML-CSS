@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="affiche"></p>
+    <p id="parent"></p>
+    <script>
+        const messi = {
+            presentation : "Lionel Messi, parfois surnommé Leo Messi, né le 24 juin 1987 à Rosario en Argentine, est un footballeur international argentin évoluant au poste d'attaquant au Paris Saint-Germain.",
+            date_nais : "24 juin 1987 ",
+            salaire :  41,
+            equipe : "Paris Saint Germain",
+            distinctin : ["Soulier d'or", "Ballon d'or", "meilleur au monde"],
+            parent : {
+                nomPapa : "Jorge", 
+                nomMum : "Celia Maria"
+            },
+            Present : function(){
+                return this.presentation + "Son salaire est de " +this.salaire +
+                "millions USD et son équipe actuelle est :" +this.equipe;
+            },
+            Parent : function() {
+                return "Le père de Messi s'appelle :" + this.parent.nomPapa 
+                + "et sa mère s'appelle :" + this.parent.nomMum;
+            }
+        }
+
+        document.getElementById("affiche").innerHTML = messi.Present();
+        document.getElementById('parent').innerHTML = messi.Parent();
+    </script>
+</body>
+</html>

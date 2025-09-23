@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript assigné une fonction à une variable</title>
+</head>
+<body>
+    <script>
+    const getSum = function(num1, num2) {
+        let total = num1 + num2;
+        return total;
+    }
+     
+    document.write(getSum(5, 10) + "<br>"); // Prints: 15
+     
+    let sum = getSum(7, 25);
+    document.write(sum); // Prints: 32
+    </script>
+</body>
+</html>  

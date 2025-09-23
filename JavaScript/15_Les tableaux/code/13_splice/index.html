@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript ajout ou suppression de n'importe quel élément</title>
+</head>
+<body>
+    <script>
+    let colors = ["Red", "Green", "Blue"];
+    let removed = colors.splice(0,1,); // supprime le premier element
+     
+    document.write(colors + "<br>"); // Prints: Green,Blue
+    document.write(removed + "<br>"); // Prints: Red (tableau à un élément)
+    document.write(removed.length + "<br>"); // Prints: 1
+     
+    removed = colors.splice(1,0,"Pink", "Yellow"); // Insérer deux éléments à partir de la position un
+    document.write(colors + "<br>"); // Prints: Green,Pink,Yellow,Blue
+    document.write(removed + "<br>"); // Empty array
+    document.write(removed.length + "<br>"); // Prints: 0
+     
+    removed = colors.splice(1, 1, "Purple", "Voilet"); // Insérer deux valeurs, en supprimer une
+    document.write(colors + "<br>"); //Prints: Green,Purple,Voilet,Yellow,Blue
+    document.write(removed + "<br>"); // Prints: Pink (tableau à un élément)
+    document.write(removed.length); // Prints: 1
+    </script>
+</body>
+</html>

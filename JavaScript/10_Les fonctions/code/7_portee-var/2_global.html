@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Variable Global</title>
+</head>
+<body>
+    <script>
+    let greet = "Hello World!";
+ 
+    // Defining function
+    function greetWorld() {
+        document.write("Variable globale dans une fonction = "+ greet);
+    }
+     
+    greetWorld();  // Prints: Variable local = Hello World!
+    document.write("<br>");
+    document.write("Variable globale = "+ greet); // Prints: Variable global = Hello World!
+    </script>
+</body>
+</html>  

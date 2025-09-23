@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript renvoie de plusieurs valeurs</title>
+</head>
+<body>
+    <script>
+    // Defining function
+    function divideNumbers(dividend, divisor){
+        let quotient = dividend / divisor;
+        let reste = dividend % divisor;
+        let arr = [dividend, divisor, quotient, reste];
+        return arr;
+    }
+     
+    // Store returned value in a variable
+    let all = divideNumbers(10, 2);
+    
+    // Displaying individual values
+    document.write("Dividende = " + all[0] + "<br>"); // Prints: 10
+    document.write("Diviseur = " + all[1] + "<br>"); // Prints: 2
+    document.write("Quotient = " + all[2] + "<br>"); // Prints: 5
+    document.write("Reste = " + all[3] + "<br>");
+ 
+    </script>
+</body>
+</html>  

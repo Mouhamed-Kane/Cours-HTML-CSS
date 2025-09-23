@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Additionner des nombres et des chaînes de caractères</title>
+</head>
+<body>
+    <script>
+    // Creating variables
+    var x = 10;
+    var y = 20;
+    var z = "30";
+    
+    // En ajoutant un nombre à un autre nombre, le résultat sera la somme des nombres.
+    document.write(x + y); // 30
+    document.write("<br>");
+    
+    // Ajout d'une chaîne de caractères avec une chaîne de caractères, le résultat sera une concaténation de chaînes de caractères.
+    document.write(z + z); // '3030'
+    document.write("<br>");
+    
+    // Additionner un nombre avec une chaîne de caractères, le résultat sera une concaténation de chaînes de caractères.
+    document.write(x + z); // '1030'
+    document.write("<br>");
+    
+    // Ajout d'une chaîne de caractères avec un nombre, le résultat sera une concaténation de chaînes de caractères.
+    document.write(z + x); // '3010'
+    document.write("<br>");
+    
+    // En additionnant des chaînes de caractères et des chiffres, le résultat sera une concaténation de chaînes de caractères.
+    document.write("Le résultat est: " + x + y); // 'Le résultat est: '1020'
+    document.write("<br>");
+    
+    // Addition de chiffres et de chaînes de caractères, calcul effectué de gauche à droite
+    document.write(x + y + z); // 'Le résultat est: '3030'
+    </script>
+</body>
+</html>
