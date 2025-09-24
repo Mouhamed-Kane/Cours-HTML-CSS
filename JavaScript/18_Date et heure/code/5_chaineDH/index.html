@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Date Strings</title>
+</head>
+<body>
+    <script>
+    const d = new Date();
+    document.write(d.toDateString() + "<br>"); // Afficher une chaîne de date abrégée 
+    document.write(d.toLocaleDateString() + "<br>"); // Afficher une chaîne de date abrégée 
+    document.write(d.toISOString() + "<br>"); // Afficher la chaîne de dates normalisées ISO 
+    document.write(d.toUTCString() + "<br>"); // Afficher une chaîne de date convertie en heure UTC 
+    document.write(d.toString()); // Afficher la chaîne de date complète avec le fuseau horaire local
+    
+    </script>
+</body>
+</html>

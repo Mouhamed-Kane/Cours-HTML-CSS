@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<body>
+
+<h2>JavaScript Timing</h2>
+
+<p>Un script sur cette page démarre cette horloge:</p>
+
+<p id="demo"></p>
+
+<button onclick="clearInterval(myVar)">Stop time</button>
+
+<script>
+let myVar = setInterval(myTimer ,1000);
+function myTimer() {
+  const d = new Date();
+  document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
+</script>
+
+</body>
+</html>

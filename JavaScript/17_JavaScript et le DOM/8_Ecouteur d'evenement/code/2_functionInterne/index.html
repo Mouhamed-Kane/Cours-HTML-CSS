@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript addEventListener()</h2>
+<p>Cet exemple utilise la méthode addEventListener() 
+    pour associer un événement de clic à un bouton..</p>
+<button id="myBtn">Essayer</button>
+<p id="demo"></p>
+
+<script>
+document.getElementById("myBtn").addEventListener("click", function() {
+ let nom = prompt("Donner votre nom");
+ document.getElementById("demo").innerHTML = "Hey donc c'est toi " + nom;
+});
+</script>
+
+</body>
+</html>

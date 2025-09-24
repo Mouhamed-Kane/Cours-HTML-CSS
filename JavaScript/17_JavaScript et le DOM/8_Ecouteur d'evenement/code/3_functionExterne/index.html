@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript addEventListener()</h2>
+
+<p>Cet exemple utilise la méthode addEventListener() pour exécuter 
+    une fonction lorsqu'un utilisateur clique sur un bouton.</p>
+
+<button id="myBtn">Essayer</button>
+<p id="sorti"></p>
+
+<script>
+document.getElementById("myBtn").addEventListener("mouseover", myFunction);
+
+function myFunction() {
+  // alert ("Hello World!");
+  let nom = prompt('Nom du user ?');
+  document.getElementById('sorti').innerHTML = `Votre est donc ${nom}`;
+
+}
+</script>
+
+</body>
+</html>

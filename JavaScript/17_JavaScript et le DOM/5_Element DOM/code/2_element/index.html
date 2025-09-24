@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript HTML DOM</h2>
+
+<p>Recherche d'éléments HTML par nom de balise.</p>
+<p>Cet exemple illustre la méthode <b>getElementsByTagName</b>.</p>
+<p>trois</p>
+
+<p id="demo"></p>
+
+<script>
+const element = document.getElementsByTagName("p");
+
+document.getElementById("demo").innerHTML =
+'Le texte du premier paragraphe (index 0) est: ' + element[0].innerHTML;
+
+</script>
+
+</body>
+</html>

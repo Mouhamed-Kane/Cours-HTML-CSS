@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript - Attacher des gestionnaires d'événements en ligne</title>
+</head>
+<body>
+    <button type="button" id="myBtn">Cliquez sur Moi</button>
+    <script>
+        function sayHello(){
+            alert('Hello World!');
+        }
+        document.getElementById("myBtn").onclick = sayHello;
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript HTML DOM</h2>
+
+<p>Recherche d'éléments HTML par nom de classe.</p>
+<p class="intro">Hello World!</p>
+<p class="intro">Cet exemple illustre la méthode <b>getElementsByClassName</b>.</p>
+
+<p id="demo"></p>
+
+<script>
+const x = document.getElementsByClassName("intro");
+
+document.getElementById("demo").innerHTML = 
+'Le premier paragraphe (index 0) avec class="intro" est: ' + x[0].innerHTML;
+</script>
+
+</body>
+</html>
