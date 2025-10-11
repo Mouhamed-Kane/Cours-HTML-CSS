@@ -1,0 +1,24 @@
+<script>
+    let produit = [{
+        nom : "Téléphone", prix : 500000,
+    },
+    {
+        nom : "Ordinateur", prix : 180000,
+    },
+    {
+        nom : "Casque", prix : 50000,
+    }
+    ];
+
+    function produitCher(produits) {
+        let max = produit[0];
+        for (let i=1; i<produit.length; i++){
+            if (produit[i].prix > max.prix) {
+                max = produit[i];
+            }
+        }
+        return max;
+    }
+    let produitMax = produitCher();
+    document.write("Le produit le plus cher : " + produitMax.nom + " " + produitMax.prix + " CFA");
+</script>

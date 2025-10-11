@@ -1,0 +1,13 @@
+<div class="woostify-contact-form">
+    <div class="row">
+        <div class="col-md-6">
+            [text* your-name placeholder "Saisir votre nom"]
+        </div>
+
+        <div class="col-md-6">
+        	[email* your-email placeholder "Saisir votre Email"]
+        </div>
+    </div>
+    [textarea* your-message placeholder "Saisir votre Message"]
+    [submit class:button "Envoyer"]
+</div>

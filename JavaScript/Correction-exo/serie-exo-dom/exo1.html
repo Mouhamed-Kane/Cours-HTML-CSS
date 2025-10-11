@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouton couleur</title>
+</head>
+<body>
+    <button onclick="getNewColor()">Change la couleur</button>
+    <script>
+        
+
+        // setInterval(getNewColor, 2000);
+
+    function getNewColor(){
+        let symbols = "0123456789ABCDEF"; //#000000 #ffffff 
+        let colors = "#"
+
+        for (i=0; i<6; i++){
+            colors = colors + symbols[Math.floor(Math.random() * 16)]; 
+        }
+        // console.log(colors)
+        document.body.style.background = colors;
+    }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+Color 1 : Meuve = #562C79
+Color 2 : Orange = #F36B21
+Secondaire 1 : meuve = #6D4099
+Secondaire 2 : orange = #E57825
+Black : #000000
+White : #ffffff

@@ -1,0 +1,24 @@
+<script>
+    let etudiants = [
+        {
+            nom : 'Diarra',
+            note : 15,
+        }, 
+        {
+            nom : 'Pape Fall',
+            note : 12,  
+        },
+        {
+            nom : 'Sara',
+            note : 8,  
+        }
+    ];
+
+    document.write("Note supérieur à 10 <br>");
+    etudiants.forEach(e => {
+        if(e.note >= 10) {
+            document.write(e.nom +  "<br>");
+        }
+    })
+
+</script>

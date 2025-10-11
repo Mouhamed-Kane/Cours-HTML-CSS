@@ -1,0 +1,1 @@
+<div class="woostify-subscribe-form">[email* your-email placeholder "your@email.com"][submit "S'inscrire"]</div>

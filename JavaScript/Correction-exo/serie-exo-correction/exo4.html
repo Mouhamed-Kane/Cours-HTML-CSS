@@ -1,0 +1,15 @@
+<script>
+    function moyenne(tab) {
+        let somme = 0;
+        for(let i=0; i<tab.length; i++){
+            somme += tab[i];
+        }
+        let moy = somme / tab.length;
+        return {somme : somme, moyenne : moy};
+    }
+    let nombre = [2,5,20];
+    let resultat = moyenne(nombre);
+    document.write("Le tableau est : " + nombre.join (", ") +"<br>");
+    document.write("La somme est : " +resultat.somme + "<br>");
+    document.write("la moyenne est : " + resultat.moyenne);
+</script>
